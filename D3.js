@@ -179,6 +179,14 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 */
 
 
+let crewMass = 0
+counter = 0
+  while (counter < starWarsCharacters.length){
+    crewMass = crewMass + starWarsCharacters[counter].mass
+    counter +=1
+  }
+console.log(crewMass)
+
 
 
 /* ESERCIZIO 7
