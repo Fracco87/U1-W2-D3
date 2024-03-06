@@ -112,9 +112,9 @@ let charactersNames = [];
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "charactersNames" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
-let starWarsCharacters2 = ['Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa', 'Owen Lars', 'Beru Whitesun lars', 'R5-D4', 'Biggs Darklighter', 'Obi-Wan Kenobi']
-for (i = 1; i <= starWarsCharacters2.length; i++) {
-  charactersNames.push(starWarsCharacters2[i] + "name");
+
+for (let i = 1; i <= starWarsCharacters2.length; i++) {
+  charactersNames.push(starWarsCharacters2[i].name);
 
   console.log(i);
 }
@@ -136,12 +136,12 @@ console.log("personaggi femminili", femaleCharacters);
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
-const eyeColor = []
-let blue = []
+const eyeColor = [];
+let blue = [];
 let yellow = [];
 let brown = [];
 let red = [];
-
+"blue grey" = [];
 
 
 
@@ -181,10 +181,10 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 
 let crewMass = 0
 counter = 0
-  while (counter < starWarsCharacters.length){
-    crewMass = crewMass + starWarsCharacters[counter].mass
-    counter +=1
-  }
+while (counter < starWarsCharacters.length) {
+  crewMass = crewMass + starWarsCharacters[counter].mass
+  counter += 1
+}
 console.log(crewMass)
 
 
